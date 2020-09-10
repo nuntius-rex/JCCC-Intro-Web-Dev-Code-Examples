@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact</title>
+    <link rel="stylesheet" href="css/form.css">
+	</head>
+	<body>
+	<main>
+		<div id="contact_form_div">
+
+				<p><h2 class='center-content'>Contact Us!</h2></p>
+
+				<p  class='center-content'>Enter your contact information and<br> we'll get back with you soon.</p>
+
+				<form id="contact_form" method="POST">
+		      <p>
+		        <label for="first_name">First Name:</label><br>
+		        <input id="first_name" type="text" name="first_name" value="First" maxlength="40" required>
+						<span id="first_name_valMSG" class="val_msg"></span>
+		      </p>
+		      <p>
+		        <label for="last_name">Last Name:</label><br>
+		        <input id="last_name" type="text" name="last_name" value="Last" maxlength="40" required>
+						<span id="last_name_valMSG" class="val_msg"></span>
+		      </p>
+		      <p>
+		        <label for="email">Email:</label><br>
+		        <input id="email" type="email" name="email" value="email@website.com"  maxlength="254" required>
+						<span id="email_valMSG" class="val_msg"></span>
+		      </p>
+		      <p>
+		        <input id="submit" type="submit" name="submit" value="Contact Us">
+		      </p>
+					<p>
+						<div id="ajaxResults">
+							<!-- AJAX Response -->
+						</div>
+					</p>
+		    </form>
+
+		</div>
+	</main>
+  <footer id="copyright_msg">
+    <small>Copyright &copy; 2017</small>
+  </footer>
+	<script src="js/form.js"></script>
+	</body>
+</html>

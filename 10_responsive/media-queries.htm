@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Media Queries</title>
+
+<style>
+  section{
+    border:solid 1px;
+  }
+  @media (min-width:0px) and (max-width:319px){
+      section{
+        background-color: orange;
+      }
+  }
+
+
+  @media (min-width:320px) and (max-width:639px){
+      section{
+        background-color: red;
+      }
+  }
+
+  @media (min-width:640px) and (max-width:767px){
+    section{
+      background-color: green;
+    }
+
+  }
+
+  @media (min-width:768px) and (max-width:1023px){
+    section{
+      background-color: blue;
+    }
+
+  }
+
+  @media (min-width:1024px) {
+    section{
+      background-color: purple;
+    }
+
+  }
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+  <section>
+    Content
+  </section>
+
+</body>
+</html>

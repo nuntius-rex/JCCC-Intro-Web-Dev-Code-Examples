@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON Web Service</h2>
+
+<p id="result"></p>
+
+<script>
+
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            Obj = JSON.parse(this.responseText);
+            document.getElementById("result").innerHTML = ""
+            + Obj.first_name + " "
+            + Obj.last_name + ", "
+            + " Status: "+Obj.status;
+        }
+    };
+    xmlhttp.open("GET", "json_service.php", true);
+    xmlhttp.send();
+
+</script>
+
+</body>
+</html>
